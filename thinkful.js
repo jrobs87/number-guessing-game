@@ -32,8 +32,12 @@ $(document).ready(function() {
       if(number == guess){
           alert("You got it!")
           console.log("correct");} 
-      else{if(Math.abs((guess - number) <= 5 )) {
-           alert("Picture of the sun!");}}}
+      else if(Math.abs(guess - number) <= 5 ) {
+           alert("Picture of the sun!");}
+      else if(Math.abs(guess - number) > 5 && Math.abs(guess - number) <= 15){ 
+           alert("Pretty hot!");          
+      }
+  }
       
 // This code uses jQuery, a javascript library, to run.
 // You don't need to know how this works, 
